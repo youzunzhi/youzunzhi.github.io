@@ -50,8 +50,24 @@
                     <!-- <a href="https://twitter.com/laagyzz">Twitter</a> &nbsp/&nbsp -->
                   </p>
                 </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
+                <!-- <td style="padding:2.5%;width:40%;max-width:40%">
                   <a href="images/youzunzhi.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/youzunzhi_circle.jpg" class="hoverZoomLink"></a>
+                </td> -->
+                <td onmouseout="id_start()" onmouseover="id_stop()" style="padding:2.5%;width:40%;max-width:40%">
+                  <div class="one">
+                    <div class="two" id='id_photo'><img src='images/id_circle1.png' style='width: 100%;'></div>
+                    <img src='images/id_circle2.png' style='width: 100%;'>
+                  </div>
+                  <script type="text/javascript">
+                    function id_start() {
+                      document.getElementById('id_photo').style.opacity = "1";
+                    }
+
+                    function id_stop() {
+                      document.getElementById('id_photo').style.opacity = "0";
+                    }
+                    nim_stop()
+                  </script>
                 </td>
               </tr>
             </tbody>
@@ -70,8 +86,8 @@
               <tr onmouseout="nim_stop()" onmouseover="nim_start()">
                 <td style="padding:20px;width:30%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='nim_image'><img src='images/nim_after.jpg' style='width: 110%;'></div>
-                    <img src='images/nim_before.jpg' style='width: 110%;'>
+                    <div class="two" id='nim_image'><img src='images/nim_after.jpg' style='width: 100%;'></div>
+                    <img src='images/nim_before.jpg' style='width: 100%;'>
                   </div>
                   <script type="text/javascript">
                     function nim_start() {
@@ -96,7 +112,8 @@
                   <br>
                   <em>NeurIPS</em>, 2023
                   <br>
-                  <a href="https://github.com/youzunzhi/NIM-AdvDef">code</a> / 
+                  <a href="https://github.com/youzunzhi/NIM-AdvDef">code</a> 
+                  <!-- /  -->
 <!--                   <a href="data/ICCV21_InterpretMDE_Supp.pdf">supplement</a> / -->
 <!--                   <a href="https://www.youtube.com/watch?v=er7TF2CusWo">video</a> /  -->
 <!--                   <a href="data/you2023neurips.bib">bibtex</a> -->
